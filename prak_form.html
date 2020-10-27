@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Data Mahasiswa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            background-color: beige;
+        }
+        h1 {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+        }
+        </style>
+</head>
+<body>
+
+    <h1>Registrasi Calon Ketua BEM</h1>  
+    <form id="create_account" action="/signup" method="POST">
+         <div>
+            <label for="nama_lengkap">Nama Lengkap :</label>
+            <div>
+                <input id="nama_lengkap" type="text" value="" size="30"
+                name="nama_lengkap" placeholder="Nama lengkap anda">
+            </div>    
+         </div>
+         <br>
+         <div>
+            <label for="nim">Nomor Induk Mahasiswa :</label>
+            <div>
+                <input id="nim" type="text" value="" size="30"
+                name="nama_lengkap" placeholder="NIM anda">
+            </div>    
+         </div>
+         <br>
+         <div>
+            <label for="jurusan">Jurusan :</label>
+            <div>
+                <input id="jurusan" type="text" value="" size="30"
+                name="jurusan" placeholder="Jurusan anda">
+            </div>    
+         </div>
+         <br>
+         <div>
+            <label for="">Tempat, Tanggal Lahir :</label>
+            <div>
+                <input type="date">
+            </div>    
+         </div>
+         <br>
+        <div>
+            <label>Jenis Kelamin :</label>
+            <div>
+                <input type="radio" name="jk" value="L" /> Laki-laki
+                <input type="radio" name="jk" value="P" /> Perempuan
+            </div>
+        </div>
+        <br>
+        <label for="">Agama :</label>
+        <select>
+            <option value="">Islam</option>
+            <option value="">Kristen</option>
+            <option value="">Hindu</option>
+            <option value="">Budha</option>
+            <option value="">Konghucu</option>
+        </select>
+        <br><br>
+        <div>
+            <label>Kewarganegaraan :</label>
+            <div>
+                <input type="radio" name="kewarganegaraan" value="WNI" /> WNI
+                <input type="radio" name="kewarganegaraan" value="WNA" /> WNA
+            </div>
+        </div>
+        <br>
+        <label for="">Golongan Darah :</label>
+        <select>
+            <option value="">O</option>
+            <option value="">A</option>
+            <option value="">B</option>
+            <option value="">AB</option>
+        </select>
+        <br><br>
+        <div>
+            <label for="">Alamat :</label>
+            <li>
+            <label for="email">Email </label>
+            <div>
+                <input id="email" type="email" value="" size="30"
+                name="email" placeholder="xxxxxx@mail.com">
+            <li>
+                <label for="">Tempat Tinggal </label>
+            <div>
+                <textarea cols="35" rows="4" placeholder="Jalan xxxxx"></textarea>
+                <br>    
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="">No. Telp</label>
+            <div>
+                <input id="no_telp" type="number" value=""
+                name="number" placeholder="08123xxxxxxx">
+            </div>
+        </div>
+        <br>
+        <label for="">Pengalaman Organisasi :</label>
+        <br>
+        <label for="">SD</label>
+        <input type="checkbox">
+        <br>
+        <label for="">SMP</label>
+        <input type="checkbox">
+        <br>
+        <label for="">SMA</label>
+        <input type="checkbox">
+        <br><br>
+        <label for="">Motivasi menjadi Ketua BEM</label>
+            <div>
+                <textarea cols="35" rows="4" placeholder="Motivasi saya xxxxxx"></textarea>
+                <br>    
+            </div>
+        <br>
+        <label for="">Pas Photo Terbaru :</label>
+        <input type="file">
+        <br><br>
+        <input type="submit" value="SUBMIT">
+    </body>
+    </html>
